@@ -35,24 +35,14 @@ $movies = $query -> fetchAll();
 <div class="wrap">
 
   <?php
-  // echo '<pre>';
-  // print_r($movies);
-  // echo '</pre>';
-
+//       Boucle affichage aléatoire films
   foreach ($movies as $movie) { ?>
     <div class="filmtitle">
-      <a href="details.php?id=<?php echo $movie['id']; ?>">
-      <?php reloadImage($movie); ?>
+      <a href="details.php?id=<?php echo $movie['id']; ?>"><?php reloadImage($movie); ?>
     </div>
-
-
-
   <?php }
-
-
-
-
-   ?>
+//        Fin boucle
+  ?>
 
 </div>
 
