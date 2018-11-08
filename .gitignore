@@ -1,5 +1,6 @@
 inc/pdo.php
-inc/movies_full.sql
+movies_full.sql
 .idea/
-inc/posters/
-inc/vendor/
+posters/
+vendor/
+movies_full.sql.zip
