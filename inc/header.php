@@ -13,7 +13,7 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
-                        <li><a href="">Inscription</a></li>
+                        <li><a href="inscription.php">Inscription</a></li>
                         <li><a href="">Connexion</a></li>
                         <li><a href="">Deconnexion</a></li>
                         <li><a href="" class="account">Mon compte</a></li>
