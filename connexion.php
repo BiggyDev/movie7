@@ -41,14 +41,7 @@ if (!empty($_POST['submitted'])) {
 }
 
  ?>
-
- <!DOCTYPE html>
- <html lang="fr">
-   <head>
-     <meta charset="utf-8">
-     <title>Connexion</title>
-   </head>
-   <body>
+<?php include('inc/header.php'); ?>
 
      <form class="formConnect" action="" method="post">
 
@@ -62,5 +55,5 @@ if (!empty($_POST['submitted'])) {
        <input type="submit" name="submitted" value="connexion">
      </form>
 
-   </body>
- </html>
+
+<?php include('inc/footer.php');

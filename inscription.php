@@ -13,22 +13,23 @@ if(!empty($_POST['submitted'])){
     if(!empty($pseudo)){
         if(strlen($pseudo) < 3 ) {
             $error['pseudo'] = 'Votre pseudo est trop court. (minimum 3 caractères)';
-        } elseif(strlen($pseudo) > 50) {
-            $error['pseudo'] = 'Votre pseudo est trop long. (maximum 50 caractères)';
+        } elseif(strlen($pseudo) > 100) {
+            $error['pseudo'] = 'Votre pseudo est trop long. (maximum 100 caractères)';
         } else {
             $sql = "SELECT pseudo FROM m7_users_website WHERE pseudo = :pseudo";
             $query = $pdo->prepare($sql);
             $query->bindValue(':pseudo',$pseudo,PDO::PARAM_STR);
             $query->execute();
             $userPseudo=$query->fetch();
-                if(!empty($userPseudo)) {
-                $error['pseudo'] = 'Pseudo deja utilise';
-                }
-
+              if(!empty($userPseudo)) {
+              $error['pseudo'] = 'Pseudo deja utilise';
+              }
             }
-        } else {
-        $error['pseudo'] = 'Veuillez entrer un pseudo';
-        }
+      } else {
+      $error['pseudo'] = 'Veuillez entrer un pseudo';
+      }
+
+
     //Verification email
     if (!empty($email)){
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -39,13 +40,12 @@ if(!empty($_POST['submitted'])){
             $query->bindValue(':email',$email,PDO::PARAM_STR);
             $query->execute();
             $userMail=$query->fetch();
-            if(!empty($userMail)) {
-                $error['email'] = 'email deja utilise';
-            }
+              if(!empty($userMail)) {
+              $error['email'] = 'email deja utilise';
+              }
         }
-
-    }else{
-        $error['email'] = 'Veuillez entrer un email';
+    } else {
+      $error['email'] = 'Veuillez entrer un email';
     }
 
     // Verification mdp
@@ -56,11 +56,11 @@ if(!empty($_POST['submitted'])){
         if(strlen($password) < 6 ) {
             $error['password'] = 'Votre mot de passe est trop court. (minimum 6 caractères)';
         }
-    }else {
+    } else {
         $error['password'] = 'Veuillez entrer un mot de passe';
     }
 
-    if(count($error) == 0){
+    if(count($error) == 0) {
         $hash = password_hash($password,PASSWORD_DEFAULT);
         $token = generateRandomString(90);
 
@@ -73,7 +73,6 @@ if(!empty($_POST['submitted'])){
         $query->execute();
         header("Location: index.php");
     }
-
 }
 
 include('inc/header.php');?>
@@ -94,3 +93,4 @@ include('inc/header.php');?>
             <input type="submit" name="submitted" value="Envoyer">
         </form>
     </div>
+<?php include('inc/footer.php');
