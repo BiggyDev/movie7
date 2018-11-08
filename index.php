@@ -33,6 +33,7 @@ $movies = $query -> fetchAll();
 <?php include('inc/header.php'); ?>
 
 <div class="wrap">
+    <section class="movies">
 
   <?php
 //       Boucle affichage aléatoire films
@@ -43,8 +44,9 @@ $movies = $query -> fetchAll();
   <?php }
 //        Fin boucle
   ?>
-
+    </section>
 </div>
+<div class="clear"></div>
 
 
 
