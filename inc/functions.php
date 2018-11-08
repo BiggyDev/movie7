@@ -10,13 +10,13 @@ function generateRandomString($length = 10) {
 }
 
 function isLogged () {
-    if(!empty($_SESSION['membre']) &&
-        !empty($_SESSION['membre']['id']) &&
-        !empty($_SESSION['membre']['pseudo']) &&
-        !empty($_SESSION['membre']['mail']) &&
-        !empty($_SESSION['membre']['role']) &&
-        !empty($_SESSION['membre']['ip'])) {
-        if($_SESSION['membre']['ip'] == $_SERVER['REMOTE_ADDR']) {
+    if(!empty($_SESSION['m7_users_website']) &&
+        !empty($_SESSION['m7_users_website']['id']) &&
+        !empty($_SESSION['m7_users_website']['pseudo']) &&
+        !empty($_SESSION['m7_users_website']['email']) &&
+        !empty($_SESSION['m7_users_website']['role']) &&
+        !empty($_SESSION['m7_users_website']['ip'])) {
+        if($_SESSION['m7_users_website']['ip'] == $_SERVER['REMOTE_ADDR']) {
             return true;
         }
     }
@@ -25,7 +25,7 @@ function isLogged () {
 
 function isAdmin () {
     if(isLogged()){
-        if($_SESSION['membre']['role'] == 'admin'){
+        if($_SESSION['m7_users_website']['role'] == 'admin'){
             return true;
         }
     }
