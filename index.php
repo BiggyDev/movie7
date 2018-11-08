@@ -66,6 +66,6 @@ $movies = $query -> fetchAll();
 
 
 
-
+<p><a class="moremovies" href="index.php">Plus de films</a></p>
 
 <?php include('inc/footer.php');
