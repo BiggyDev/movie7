@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="asset/style.css">
-        <title>Title</title>
+        <title>Cineworld</title>
     </head>
-    <body>
+    <body>s
         <header>
             <nav class="navbar">
                 <ul>
