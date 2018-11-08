@@ -45,6 +45,7 @@ $genres = $query -> fetch();
 
 
 <div class="wrap">
+    <section class="movies">
 
   <?php
 //       Boucle affichage aléatoire films
@@ -55,8 +56,9 @@ $genres = $query -> fetch();
   <?php }
 //        Fin boucle
   ?>
-
+    </section>
 </div>
+<div class="clear"></div>
 
 
 
