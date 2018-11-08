@@ -4,3 +4,4 @@ movies_full.sql
 posters/
 vendor/
 movies_full.sql.zip
+.DS_Store
