@@ -35,12 +35,34 @@ header nav ul li a:hover {
 }
 
 
-.rs {
-  float: left;
+footer {
+  background-color: white;
+  height: 200px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 
 }
 
 
 .contact {
+  float: left;
+  margin:20 0 20 0;
+  padding: 20 0 20 0;
+  width : 50%;
+  text-align: center;
+}
 
+.rs  {
+ text-align: center;
+ width: 50%;
+}
+
+.rs a {
+text-decoration: none;
+color: blue;
+}
+
+.rs img {
+  width: 24px;
 }
