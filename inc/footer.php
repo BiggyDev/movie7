@@ -7,7 +7,9 @@
     <div class="rs">
       <h3>Suivez-nous</h3>
       <a href="https://fr-fr.facebook.com/" target="_blank" ><img src="inc/fb.png" alt="fb"></a>
-      <a href="https://twitter.com/?lang=fr" target="_blank"><img src="inc/fb.png" alt="twitter"</a>
+      <a href="https://twitter.com/?lang=fr" target="_blank"><img src="inc/fb.png" alt="twitter"></a>
+      <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="inc/fb.png" alt="instagram"></a>
+
     </div>
 
     <div class="contact">
