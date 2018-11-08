@@ -44,3 +44,57 @@ header nav ul li a:hover {
 .contact {
 
 }
+
+.social-icons li
+{
+	float: left;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+.social-icons li a
+{
+	width: 46px; height: 46px;
+	display: block;
+	background: url('../img/social-icons.png');
+}
+
+.social-icons li a.facebook
+{
+	background: url('../img/social-icons.png') no-repeat 0px 0;
+}
+
+.social-icons li a.twitter
+{
+	background: url('../img/social-icons.png') no-repeat -52px 0;
+}
+
+.social-icons li a.dribbble
+{
+	background: url('../img/social-icons.png') no-repeat -104px 0;
+}
+
+.social-icons li a.rss
+{
+	background: url('../img/social-icons.png') no-repeat -156px 0;
+}
+
+.social-icons li a.facebook:hover
+{
+	background: url('../img/social-icons.png') no-repeat 0 -47px;
+}
+
+.social-icons li a.twitter:hover
+{
+	background: url('../img/social-icons.png') no-repeat -52px -47px;
+}
+
+.social-icons li a.dribbble:hover
+{
+	background: url('../img/social-icons.png') no-repeat -104px -47px;
+}
+
+.social-icons li a.rss:hover
+{
+	background: url('../img/social-icons.png') no-repeat -156px -47px;
+}

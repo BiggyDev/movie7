@@ -6,9 +6,12 @@
 
     <div class="rs">
       <h3>Suivez-nous</h3>
-      <a href="https://fr-fr.facebook.com/" target="_blank" ><img src="inc/fb.png" alt="fb"></a>
-      <a href="https://twitter.com/?lang=fr" target="_blank"><img src="inc/fb.png" alt="twitter"></a>
-      <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="inc/fb.png" alt="instagram"></a>
+      <ul class="social-icons">
+          <li><a href="http://www.facebook.com" target="_blank" class="facebook"></a></li>
+          <li><a href="http://www.twitter.com" target="_blank" class="twitter"></a></li>
+          <li><a href="http://www.dribbble.com" target="_blank" class="dribbble"></a></li>
+          <li><a href="http://www.rss.com" target="_blank" class="rss"></a></li>
+      </ul>
 
     </div>
 
