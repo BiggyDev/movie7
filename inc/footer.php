@@ -1,14 +1,16 @@
 <footer>
+  <div class="wrap">
+    <div class="contact">
+      <nav>
+        <ul>
+          <li>Contactez-nous</li>
+          <li>Qui sommes-nous</li>
+          <li>Conditions d'utilisation</li>
+        </ul>
+      </nav>
+    </div>
 
-  <div class="contact">
-    <nav>
-      <ul>
-        <li>Contactez-nous</li>
-        <li>Qui sommes-nous</li>
-        <li>Conditions d'utilisation</li>
-      </ul>
-    </nav>
-  </div>
+
 
   <div class="clear"></div>
 
@@ -20,6 +22,7 @@
         <li><a href="http://www.dribbble.com" target="_blank" class="dribbble"></a></li>
         <li><a href="http://www.rss.com" target="_blank" class="rss"></a></li>
     </ul>
+  </div>
   </div>
 
 

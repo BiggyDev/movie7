@@ -59,35 +59,22 @@ header nav ul li a:hover {
 }
 
 footer {
-  background-color: white;
+  background-color: black;
   height: 200px;
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
-
-.contact {
-  float: left;
-  margin:20 0 20 0;
-  padding: 20 0 20 0;
-  width : 50%;
-  text-align: center;
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.rs  {
- text-align: center;
- width: 50%;
-}
-
-.rs a {
-text-decoration: none;
-color: blue;
-}
-
-.rs img {
-  width: 24px;
+.contact li {
+    display: inline;
+    padding: 14px 16px;
 }
 
 .social-icons li
