@@ -2,6 +2,14 @@
 ivirbeeivbeivue
 =======
 <?php
+<<<<<<< HEAD
+
+
+echo 'hoijjjhilllli'
+
+
+ ?>
+=======
 ?>
 <!DOCTYPE html>
 <html lang="en">
