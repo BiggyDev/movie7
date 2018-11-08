@@ -1,37 +1,32 @@
+<footer>
 
+  <div class="contact">
+    <nav>
+      <ul>
+        <li>Contactez-nous</li>
+        <li>Qui sommes-nous</li>
+        <li>Conditions d'utilisation</li>
+      </ul>
+    </nav>
+  </div>
 
-</div>
+  <div class="clear"></div>
 
-    <footer>
-
-
-      <div class="contact">
-        <nav>
-          <ul>
-            <li>Contactez-nous</li>
-            <li>Qui sommes-nous</li>
-            <li>Conditions d'utilisation</li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="clear"></div>
-
-
-    <div class="rs">
-      <h3>Suivez-nous</h3>
-
-      <a target="blank" href="https://fr-fr.facebook.com/" ><img src="imgs/social-icons.png" alt="fb"></a>
-      <a href="https://twitter.com/?lang=fr" target="blank"><img src="inc/fb.png" alt="twitter"></a>
-      <a href="https://www.instagram.com/?hl=fr" target="blank"><img src="inc/fb.png" alt="instagram"></a>
-
-    </div>
+  <div class="rs">
+    <h3>Suivez-nous</h3>
+    <ul class="social-icons">
+        <li><a href="http://www.facebook.com" target="_blank" class="facebook"></a></li>
+        <li><a href="http://www.twitter.com" target="_blank" class="twitter"></a></li>
+        <li><a href="http://www.dribbble.com" target="_blank" class="dribbble"></a></li>
+        <li><a href="http://www.rss.com" target="_blank" class="rss"></a></li>
+    </ul>
+  </div>
 
 
 
 
 
-    </footer>
+</footer>
 
-  </body>
+</body>
 </html>
