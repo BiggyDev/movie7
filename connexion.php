@@ -46,11 +46,11 @@ if (!empty($_POST['submitted'])) {
      <form class="formConnect" action="" method="post">
 
        <label for="login">login</label>
-       <input type="text" name="login" id = "login" value="">
+       <input  type="text" name="login" id = "login" value="">
 
        <label for="password">password</label>
        <span class="error"><?php if(!empty($error['password'])) {echo $error['password'];}  ?></span>
-       <input type="text" name="login" id = "password" value="">
+       <input type="password" name="login" id = "password" value="">
 
        <input type="submit" name="submitted" value="connexion">
      </form>
