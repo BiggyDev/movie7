@@ -2,3 +2,4 @@ inc/pdo.php
 inc/movies_full.sql
 .idea/
 inc/posters/
+inc/vendor/
