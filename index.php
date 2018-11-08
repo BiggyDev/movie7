@@ -59,52 +59,32 @@ foreach ($genres as $genre) {
 
 ?>
 <?php include('inc/header.php'); ?>
-<form class="filtergenres" action="" method="post">
-  <?php foreach ($tableau as $tab) { ?>
-    <label for=""><input type="checkbox" name="genre[]" value="<?= $tab ?>"><?php echo $tab; ?></label>
-  <?php } ?>
-  <input type="submit" name="submitted" value="Filtrer">
-</form>
 
-
-
-
+<div class="filtermovies">
+  <h3 class="filtermoviestitle">Filtres</h3>
+  <form class="filtergenres" action="" method="post">
+    <?php foreach ($tableau as $tab) { ?>
+      <label class="checkboxfilter" for=""><input class="checkboxfilterchoice "  type="checkbox" name="genre[]" value="<?= $tab ?>"><?php echo $tab; ?></label><br>
+    <?php } ?>
+    <input class="filtervalidation" type="submit" name="submitted" value="Filtrer">
+  </form>
+</div>
 
 <div class="wrap">
-    <section class="movies">
-
+  <section class="movies">
   <?php
-//       Boucle affichage aléatoire films
+//Boucle affichage aléatoire films
   foreach ($movies as $movie) { ?>
     <div class="filmtitle">
       <a href="details.php?id=<?php echo $movie['id']; ?>">
       <?php reloadImage($movie);?>
     </div>
   <?php }
-//        Fin boucle
+//Fin boucle
   ?>
-    </section>
+  </section>
 </div>
 <div class="clear"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <p><a class="moremovies" href="index.php">Plus de films</a></p>
