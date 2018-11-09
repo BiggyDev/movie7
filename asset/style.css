@@ -127,6 +127,16 @@ footer {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.contact {
+margin-bottom: 10px;
+padding-top: 10px;
 }
 
 .contact ul {
@@ -138,6 +148,7 @@ footer {
 .contact li {
     display: inline;
     padding: 14px 16px;
+    margin-left: -16px;
 }
 
 .social-icons li
