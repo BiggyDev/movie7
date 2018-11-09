@@ -78,9 +78,9 @@ $title = 'CINEWORLD - Acceuil'; ?>
   foreach ($movies as $movie) { ?>
     <div class="filmtitle">
       <a href="details.php?slug=<?php echo $movie['slug']; ?>">
-      <?php reloadImage($movie);?>
-  <?php  }  ?>
-</div>
+      <?php reloadImage($movie); ?>
+    </div>
+      <?php  }  ?>
 <div class="clear"></div>
 
 
