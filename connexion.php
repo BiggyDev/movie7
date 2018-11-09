@@ -44,7 +44,11 @@ if (!empty($_POST['submitted'])) {
         'role'    => $user['role'],
         'ip'      => $_SERVER['REMOTE_ADDR']
       );
+      if (isAdmin()) {
+        header('Location: indexb.php');
+      } else {
         header('Location: index.php');
+      }
     }
 }
 

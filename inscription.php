@@ -55,6 +55,8 @@ if(!empty($_POST['submitted'])){
         }
         if(strlen($password) < 6 ) {
             $error['password'] = 'Votre mot de passe est trop court. (minimum 6 caractères)';
+        } elseif(strlen($password) > 255) {
+            $error['password'] = 'Le mot de passe est trop long. (Maximum 255 caractères)';
         }
     } else {
         $error['password'] = 'Veuillez entrer un mot de passe';
