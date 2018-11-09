@@ -10,7 +10,7 @@ if(!empty($_POST['submitted'])) {
   // Requête à la base de données filtres
    $sql = "SELECT * FROM movies_full WHERE 1=1 ";
    foreach ($variable as $key => $v) {
-   $sql .= "AND genres LIKE '%" . $v . "%'";
+   $sql .= "OR genres LIKE '%" . $v . "%'";
    }
    $query = $pdo -> prepare($sql);
    $query -> execute();
@@ -81,14 +81,21 @@ $title = 'CINEWORLD - Acceuil'; ?>
       <a href="details.php?slug=<?php echo $movie['slug']; ?>">
       <?php reloadImage($movie); ?>
     </div>
+<<<<<<< HEAD
 
       <?php  }  ?>
 <div class="clear"></div>
+=======
+      <?php  }  ?>
+>>>>>>> f8daf5aeed598fd8693c115f04928846251b6a44
   </section>
   <div class="clear"></div>
 </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8daf5aeed598fd8693c115f04928846251b6a44
 
 <p><a class="moremovies" href="index.php">Plus de films</a></p>
 

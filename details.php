@@ -9,9 +9,15 @@ $query -> execute();
 $movie = $query -> fetch();
 
 // Fin de la requête
- $title = 'CINEWORLD - ' . $movie['title'];?>
+ $title = 'CINEWORLD - ' . $movie['title'];
+
+ ?>
+
+
 <?php include('inc/header.php'); ?>
+    <div class="clear"></div>
     <div class="wrap">
+      <div class="clear"></div>
       <section class="affiche">
 <?php reloadImage($movie); ?>
       </section>
@@ -27,8 +33,15 @@ $movie = $query -> fetch();
           <li>Note : <?php echo $movie['rating'] ?></li>
           <li>Popularité : <?php echo $movie['popularity'] ?>/100</li>
         </ul>
-       </section>
-
+        </section>
+        <div class="clear"></div>
+        <?php if(islogged()) { ?>
+        <form action="" class="ratings" >
+            <label for="rating">Votre note</label>
+            <span><input type="text" name="rating" id="rating">/100</span>
+            <input type="submit" name="submitted" value="Voter">
+        </form>
+        <?php } ?>
     </div>
     <div class="clear"></div>
 
