@@ -81,11 +81,16 @@ $title = 'CINEWORLD - Acceuil'; ?>
       <a href="details.php?slug=<?php echo $movie['slug']; ?>">
       <?php reloadImage($movie); ?>
     </div>
+<<<<<<< HEAD
+      <?php  }  ?>
+<div class="clear"></div>
+=======
     <?php  }  ?>
   </section>
   <div class="clear"></div>
 </div>
 
+>>>>>>> 302f562a68aec26d74e2a731bc03448f215f1779
 
 
 <p><a class="moremovies" href="index.php">Plus de films</a></p>

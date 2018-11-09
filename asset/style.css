@@ -1,9 +1,17 @@
 @import 'reset.css';
 
+html {
+  height: 100%; }
+
 body {
     font: 400 16px/1.3 verdana, arial, sans-serif;
     color: #000;
     background-color: darkgrey;
+    position: relative;
+    min-height: 100%;
+  margin: 0;
+  padding: 0;
+
 }
 
 .wrap {
@@ -15,11 +23,8 @@ body {
 img {
     width: 100%;
     height: 19em;
-
 }
-
 /*Entete*/
-
 h1 {
     float: left;
     color: white;
@@ -157,28 +162,24 @@ footer {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+  position: absolute; bottom: 0; left: 0; right: 0}}
 
 
 .contact {
-margin-bottom: 10px;
-padding-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .contact ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .contact li {
-    display: inline;
-    padding: 14px 16px;
-    margin-left: -16px;
+  display: inline;
+  padding: 14px 16px;
+  margin-left: -16px;
 }
 
 .social-icons li
@@ -236,7 +237,7 @@ padding-top: 10px;
 }
 
 .formConnect input {
-    width: 10%;
-    padding: 5px;
-    margin: 20px;
+  width: 10%;
+  padding: 5px;
+  margin: 20px;
 }
