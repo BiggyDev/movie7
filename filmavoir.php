@@ -1,5 +1,5 @@
 <?php include('inc/pdo.php');?>
-<?php include('inc/fonctions.php');?>
+<?php include('inc/functions.php');?>
 
 <?php
 
@@ -76,7 +76,7 @@ if(!empty($_GET['slug'])){
 
   <?php  if(is_logged() && $moviesnote) { ?>
           <form class="" action="" method="post">
-              <input type="hidden" name="movie" value=" <?php echp $movie['id']; ?> ">
+              <input type="hidden" name="movie" value=" <?php echo $movie['id']; ?> ">
               <input type="submit" name="submitted" value="film à voir">
             </form>
           <?php } ?>
