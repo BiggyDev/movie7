@@ -59,30 +59,31 @@ foreach ($genres as $genre) {
 
 ?>
 <?php include('inc/header.php'); ?>
-
-<div class="filtermovies">
-  <h3 class="filtermoviestitle">Filtres</h3>
-  <form class="filtergenres" action="" method="post">
-    <?php foreach ($tableau as $tab) { ?>
-      <label class="checkboxfilter" for=""><input class="checkboxfilterchoice "  type="checkbox" name="genre[]" value="<?= $tab ?>"><?php echo $tab; ?></label><br>
-    <?php } ?>
-    <input class="filtervalidation" type="submit" name="submitted" value="Filtrer">
-  </form>
-</div>
-
-<div class="wrap">
-  <section class="movies">
-  <?php
-//Boucle affichage aléatoire films
-  foreach ($movies as $movie) { ?>
-    <div class="filmtitle">
-      <a href="details.php?id=<?php echo $movie['id']; ?>">
-      <?php reloadImage($movie);?>
+<div class="container">
+    <div class="filtermovies">
+      <h3 class="filtermoviestitle">Filtres</h3>
+      <form class="filtergenres" action="" method="post">
+        <?php foreach ($tableau as $tab) { ?>
+          <label class="checkboxfilter" for=""><input class="checkboxfilterchoice "  type="checkbox" name="genre[]" value="<?= $tab ?>"><?php echo $tab; ?></label><br>
+        <?php } ?>
+        <input class="filtervalidation" type="submit" name="submitted" value="Filtrer">
+      </form>
     </div>
-  <?php }
-//Fin boucle
-  ?>
-  </section>
+
+    <div class="wrap">
+      <section class="movies">
+      <?php
+    //Boucle affichage aléatoire films
+      foreach ($movies as $movie) { ?>
+        <div class="filmtitle">
+          <a href="details.php?id=<?php echo $movie['id']; ?>">
+          <?php reloadImage($movie);?>
+        </div>
+      <?php }
+    //Fin boucle
+      ?>
+      </section>
+    </div>
 </div>
 <div class="clear"></div>
 
