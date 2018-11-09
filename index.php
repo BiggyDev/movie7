@@ -82,7 +82,6 @@ $title = 'CINEWORLD - Acceuil'; ?>
       <?php reloadImage($movie); ?>
     </div>
     <?php  }  ?>
-    <div class="clear"></div>
   </section>
   <div class="clear"></div>
 </div>
