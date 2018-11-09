@@ -44,14 +44,9 @@ if (!empty($_POST['submitted'])) {
         'role'    => $user['role'],
         'ip'      => $_SERVER['REMOTE_ADDR']
       );
-
         header('Location: index.php');
     }
-
-// die;
 }
-
-// print_r($_SESSION);
 
 $title = 'CINEWORLD - Connexion'; ?>
 <?php include('inc/header.php'); ?>

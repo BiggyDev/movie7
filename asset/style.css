@@ -1,4 +1,4 @@
-@import "reset.css";
+@import 'reset.css';
 
 body {
     font: 400 16px/1.3 verdana, arial, sans-serif;
@@ -13,7 +13,7 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 25%;
     height: 19em;
 
 }
@@ -112,7 +112,7 @@ header nav ul li span .hellouser
 }
 
 /*Page detail*/
-section.affiche {
+section .affiche {
     width: 25%;
     float: left;
 
@@ -133,6 +133,16 @@ footer {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.contact {
+margin-bottom: 10px;
+padding-top: 10px;
 }
 
 .contact ul {
@@ -144,6 +154,7 @@ footer {
 .contact li {
     display: inline;
     padding: 14px 16px;
+    margin-left: -16px;
 }
 
 .social-icons li
