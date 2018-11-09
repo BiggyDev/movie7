@@ -17,7 +17,6 @@
                         <li>Bonjour <span class="hellouser"><?= $_SESSION['m7_users_website']['pseudo']; ?></span></li>
                         <li><a href="deconnexion.php">Deconnexion</a></li>
                         <li><a href="account.php" class="account">Mon compte</a></li>
-
                         <?php } else {?>
                         <li><a href="inscription.php">Inscription</a></li>
                         <li><a href="connexion.php">Connexion</a></li>

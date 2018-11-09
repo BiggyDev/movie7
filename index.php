@@ -59,16 +59,17 @@ foreach ($genres as $genre) {
 
 $title = 'CINEWORLD - Acceuil'; ?>
 <?php include('inc/header.php'); ?>
-<div class="container">
+  <div class="container">
     <div class="filtermovies">
       <h3 class="filtermoviestitle">Filtres</h3>
       <form class="filtergenres" action="" method="post">
         <?php foreach ($tableau as $tab) { ?>
-          <label class="checkboxfilter" for=""><input class="checkboxfilterchoice "  type="checkbox" name="genre[]" value="<?= $tab ?>"><?php echo $tab; ?></label><br>
+        <label class="checkboxfilter" for=""><input class="checkboxfilterchoice "  type="checkbox" name="genre[]" value="<?= $tab ?>"><?php echo $tab; ?></label><br>
         <?php } ?>
         <input class="filtervalidation" type="submit" name="submitted" value="Filtrer">
       </form>
     </div>
+  </div>
 
 
 <div class="wrap">
@@ -78,10 +79,14 @@ $title = 'CINEWORLD - Acceuil'; ?>
   foreach ($movies as $movie) { ?>
     <div class="filmtitle">
       <a href="details.php?slug=<?php echo $movie['slug']; ?>">
-      <?php reloadImage($movie);?>
-  <?php  }  ?>
+      <?php reloadImage($movie); ?>
+    </div>
+    <?php  }  ?>
+    <div class="clear"></div>
+  </section>
+  <div class="clear"></div>
 </div>
-<div class="clear"></div>
+
 
 
 <p><a class="moremovies" href="index.php">Plus de films</a></p>

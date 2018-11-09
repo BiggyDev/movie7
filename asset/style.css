@@ -123,10 +123,12 @@ section.affiche img {
     height: 50%;
 }
 
-section.description {
+section.description
+{
     float: right;
     width: 70%;
 }
+
 footer {
   background-color: black;
   height: 200px;
