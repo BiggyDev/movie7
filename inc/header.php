@@ -1,10 +1,10 @@
 <?php ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="asset/style.css">
-        <title>Cineworld</title>
+        <title><?php echo $title; ?></title>
     </head>
     <body>
         <header>
@@ -13,7 +13,8 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
-                        <?php if(islogged()){ ?>
+                        <?php if(islogged()) { ?>
+                        <li>Bonjour <span class="hellouser"><?= $_SESSION['m7_users_website']['pseudo']; ?></span></li>
                         <li><a href="deconnexion.php">Deconnexion</a></li>
                         <li><a href="account.php" class="account">Mon compte</a></li>
 

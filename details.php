@@ -2,13 +2,14 @@
 include('inc/functions.php');
 
 // Requête à la base de données
-$sql = "SELECT * FROM movies_full WHERE id = :id";
+$sql = "SELECT * FROM movies_full WHERE slug = :slug";
 $query = $pdo -> prepare($sql);
-$query -> bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+$query -> bindValue(':slug', $_GET['slug'], PDO::PARAM_STR);
 $query -> execute();
 $movie = $query -> fetch();
+
 // Fin de la requête
-?>
+ $title = 'CINEWORLD - ' . $movie['title'];?>
 <?php include('inc/header.php'); ?>
     <div class="wrap">
       <section class="affiche">

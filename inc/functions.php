@@ -19,8 +19,9 @@ function isLogged () {
         if($_SESSION['m7_users_website']['ip'] == $_SERVER['REMOTE_ADDR']) {
             return true;
         }
+    } else {
+      return false;
     }
-    return false;
 }
 
 function isAdmin () {
@@ -40,18 +41,18 @@ function reloadImage($movie)
 
 
 
-function affichageCategories()
-{
-  foreach ($genres as $genre) {
-    $g = $genre['genres'];
-    $explodes = explode(',',$g);
-    foreach ($explodes as $explode) {
-      $ex = trim($explode);
-      if(!in_array($ex,$tableau)) {
-        if(!empty($ex)) {
-          $tableau[] = $ex;
-        }
-      }
-    }
-  }
-}
+// function affichageCategories()
+// {
+//   foreach ($genres as $genre) {
+//     $g = $genre['genres'];
+//     $explodes = explode(',',$g);
+//     foreach ($explodes as $explode) {
+//       $ex = trim($explode);
+//       if(!in_array($ex,$tableau)) {
+//         if(!empty($ex)) {
+//           $tableau[] = $ex;
+//         }
+//       }
+//     }
+//   }
+// }

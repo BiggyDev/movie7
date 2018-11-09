@@ -47,6 +47,12 @@ header nav ul li a:hover {
     background-color: darkslateblue;
 }
 
+header nav ul li span .hellouser
+{
+  color: lime;
+  background-color: white;
+}
+
 .account {
     float: right;
 }

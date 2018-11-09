@@ -74,7 +74,7 @@ if(!empty($_POST['submitted'])){
         header("Location: index.php");
     }
 }
-
+$title = 'CINEWORLD - Inscription';
 include('inc/header.php');?>
     <div class="wrap">
         <form class="inscription" action="" method="post">

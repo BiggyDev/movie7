@@ -57,7 +57,7 @@ foreach ($genres as $genre) {
 }
 
 
-?>
+$title = 'CINEWORLD - Acceuil'; ?>
 <?php include('inc/header.php'); ?>
 
 <div class="filtermovies">
@@ -76,7 +76,7 @@ foreach ($genres as $genre) {
 //Boucle affichage aléatoire films
   foreach ($movies as $movie) { ?>
     <div class="filmtitle">
-      <a href="details.php?id=<?php echo $movie['id']; ?>">
+      <a href="details.php?slug=<?php echo $movie['slug']; ?>">
       <?php reloadImage($movie);?>
     </div>
   <?php }
