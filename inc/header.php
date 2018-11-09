@@ -14,8 +14,9 @@
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
                         <?php if(islogged()) { ?>
-                        <li>Bonjour <span class="hellouser"><?= $_SESSION['m7_users_website']['pseudo']; ?></span></li>
+
                         <li><a href="deconnexion.php">Deconnexion</a></li>
+                            <li><span class="hellouser">Bonjour <?= $_SESSION['m7_users_website']['pseudo']; ?></span></li>
                         <li><a href="account.php" class="account">Mon compte</a></li>
                         <?php } else {?>
                         <li><a href="inscription.php">Inscription</a></li>
@@ -23,5 +24,6 @@
                         <?php } ?>
                     </ul>
                 </nav>
+
             </div>
         </header>
